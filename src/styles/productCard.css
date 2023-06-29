@@ -1,0 +1,114 @@
+section{
+    width: 80%;
+    margin: auto auto 20px auto;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    row-gap: 10px;
+}
+.outer-card-box{
+    display: block;
+    margin: auto;
+}
+.cards{
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards:hover{
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.image_box{
+    display: block;
+    margin: auto;
+}
+.image_box img{
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details p{
+    text-align: center;
+    margin: 3px 0;
+}
+.details p:nth-child(1){
+    font-weight: bold;
+}
+.details p:nth-child(1):hover{
+    text-decoration: underline;
+    color: firebrick;
+}
+.details p:nth-child(2){
+    color: grey;
+    font-size: 0.8rem;
+}
+.details p:nth-child(3){
+    font-weight: bold;
+    color: grey;
+}
+.details button{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    background-color: firebrick;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+}
+.details button:hover{
+    cursor: pointer;
+    background: rgb(196, 58, 58);
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 1400px) {
+    section{
+        /* width: 60%; */
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .cards{
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 1085px) {
+    /* section{
+        width: 60%;
+    } */
+    .cards{
+        width: 200px;
+    }
+    .image_box img{
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 836px) {
+    section{
+        /* background: gray; */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cards{
+        margin: auto;
+        /* background: red; */
+    }
+
+}
+@media only screen and (max-width: 565px) {
+    section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .details p{
+        font-size: 14px;
+    }
+}
