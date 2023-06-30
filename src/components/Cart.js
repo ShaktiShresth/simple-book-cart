@@ -42,12 +42,27 @@ const Cart = ({ cart, setCart, handleChange }) => {
           </div>
         </div>
       ))}
-      <div className="total">
-        <span>Total Price</span>
-        <span>
-          ${price} / ${Math.round(price)}
-        </span>
-      </div>
+      {cart.length > 0 ? (
+        <div className="total">
+          <span>Total Price</span>
+          <span>
+            ${price} / ${Math.round(price)}
+          </span>
+        </div>
+      ) : (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "red",
+            minHeight: "350px",
+            fontSize: "20px",
+          }}
+        >
+          Your cart is empty.
+        </div>
+      )}
     </article>
   );
 };
