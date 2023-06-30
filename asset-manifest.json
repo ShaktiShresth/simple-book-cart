@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/simple-book-cart/static/css/main.de333f79.css",
+    "main.js": "/simple-book-cart/static/js/main.ac013fba.js",
+    "index.html": "/simple-book-cart/index.html",
+    "main.de333f79.css.map": "/simple-book-cart/static/css/main.de333f79.css.map",
+    "main.ac013fba.js.map": "/simple-book-cart/static/js/main.ac013fba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de333f79.css",
+    "static/js/main.ac013fba.js"
+  ]
+}
