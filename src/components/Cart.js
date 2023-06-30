@@ -43,7 +43,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
         </div>
       ))}
       <div className="total">
-        <span>Total Price of the listed items in Cart</span>
+        <span>Total Price</span>
         <span>
           ${price} / ${Math.round(price)}
         </span>

@@ -22,16 +22,15 @@ article{
 .cart_img{
     display: flex;
     width: 400px;
-    /* background: red; */
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 .cart_buttons{
-    /* background: rebeccapurple; */
     width: 350px;
 }
 .cart_price_remove{
-    /* background: grey;    */
+    /* height: 80px; */
     display: flex;
     align-items: center;
 }
@@ -51,15 +50,13 @@ article{
 .cart_box div:nth-child(2) button{
     padding: 5px 10px;
     font-weight: bold;
-    margin: 10px;
-    width: 35px;
+    margin: 4px;
 }
 .cart_box div:nth-child(2) button:hover{
     cursor: pointer;
 }
 .cart_box div:nth-child(3) button{
     padding: 9px 15px;
-    font-weight: 600;
     border: none;
     outline: none;
     color: white;
@@ -83,7 +80,6 @@ article{
     display: flex;
     justify-content: space-between;
     font-size: 1.3rem;
-    /* position: relative; */
 }
 .total span:nth-child(1){
     color: firebrick;
@@ -93,7 +89,48 @@ article{
 .total span:nth-child(2){
     color: green;
     font-weight: bold;
-    /* position: absolute;
-    right: 75px; */
     border-bottom: 1px solid firebrick;
+}
+
+/* Responsive styling */
+@media (min-width: 535px) and (max-width: 1110px){
+    .cart_buttons{
+        width: 55px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;       
+    }
+    /* .cart_price_remove{
+        flex-direction: column;
+        justify-content: space-between;
+    } */
+}
+
+@media only screen and (max-width: 535px){
+    .cart_box{
+        flex-direction: column;
+    }
+    .cart_img{
+        display: flex;
+        flex-direction: column;
+    }
+    .cart_img img{
+        height: 200px;
+        width: 150px;
+    }
+    .cart_img p{
+        text-align: center;
+    }
+    .cart_buttons{
+        flex-direction: row;
+    }
+    .cart_price_remove{
+        flex-direction: row;
+    }
+    .cart_box div:nth-child(2){
+        width: auto;
+    }
+    .cart_box div:nth-child(2) button{
+        margin: 5px;
+    }
 }
